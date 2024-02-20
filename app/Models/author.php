@@ -9,13 +9,13 @@ use Str;
 class Author extends Model
 {
     use HasFactory;
-    protected $fillable = ['nom', 'prenom'];
+    protected $fillable = ['nom', 'prenom', 'image'];
 
     public function livres()
     {
         return $this->hasMany(Livre::class); // un auteur peut avoir plusieurs livres
     }
-
+  
     public function getSlug() : string
     {
         return Str::slug($this->nom);

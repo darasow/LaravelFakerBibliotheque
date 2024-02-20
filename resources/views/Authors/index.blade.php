@@ -21,7 +21,6 @@
             </div>
    <div class="grid grid-cols-1 items-center gap-2  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 space-y-2 md:space-y-0 md:space-x-2">
         @forelse($authors as $author)
-
             @include('Authors.CardAuthors.card')
          @empty
           

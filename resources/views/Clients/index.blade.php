@@ -24,7 +24,7 @@
 
             @include('Clients.CardClients.card')
          @empty
-          
+            
             <h1 class="flex mt-4 items-center justify-center py-4 bg-blue-500 text-bold text-white">Aucun bien ne correspond a la recherche</h1>
 
         @endforelse

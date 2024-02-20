@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 class emprunt extends Model
 {
     use HasFactory;
-
+    protected $fillable = ['client_id', 'livre_id'];
     public function livre()
     {
         return $this->belongsTo(Livre::class);

@@ -1,6 +1,5 @@
 @extends('base')
 @section('title', 'Liste des Livres')
-
 @section('content')
 
 <div class="w-[80%] mx-auto">
@@ -28,8 +27,6 @@
             <h1 class="flex mt-4 items-center justify-center py-4 bg-blue-500 text-bold text-white">Aucun livre n'existe</h1>
 
         @endforelse
-                        
-
                
    </div>
              

@@ -9,7 +9,7 @@ class Client extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nom', 'prenom']; // pour indiquer les champs qui sont en l'ecture et ecriture
+    protected $fillable = ['nom', 'prenom', 'image']; // pour indiquer les champs qui sont en l'ecture et ecriture
 
     public function emprunts()
     {

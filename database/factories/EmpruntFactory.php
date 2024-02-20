@@ -24,7 +24,6 @@ class EmpruntFactory extends Factory
             'client_id' => \App\Models\Client::factory(),
             'date_emprunt' => $this->faker->dateTimeBetween('-1 year', 'now'),
             'date_retour' => $this->faker->dateTimeBetween('now', '+1 month'),
-
         ];
     }
 }

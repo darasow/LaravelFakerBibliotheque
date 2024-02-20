@@ -15,7 +15,7 @@ return new class extends Migration
             $table->boolean('emprunter')->default(false);
         });
     }
-
+    
     /**
      * Reverse the migrations.
      */

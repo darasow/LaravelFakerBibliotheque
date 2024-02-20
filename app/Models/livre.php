@@ -10,13 +10,12 @@ class Livre extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['author_id', 'titre'];
+    protected $fillable = ['author_id', 'titre', 'image'];
 
     public function author()
     {
         return $this->belongsTo(Author::class); // un livre est creer par un seul auteur
     }
-
 
     public function isEmprunter()
     {
